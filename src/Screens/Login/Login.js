@@ -37,18 +37,12 @@ class Login extends Component {
 
     render() {
         return (
-            <div className="container-fluid">
-                <div className=" jumbotron jumbotron-fluid">
-                    <div className="container">
-                        <h1 className="display text-center">MEETING APP</h1>
-                    </div>
-                </div>
-
-                <button onClick={this.login}>Fb Login</button>
+            <div >
+            Login
             </div>
-                )
-            }
-        
-        }
-        
+        )
+    }
+
+}
+
 export default Login;

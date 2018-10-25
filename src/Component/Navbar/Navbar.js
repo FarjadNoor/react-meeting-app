@@ -12,7 +12,6 @@ export default class Navbar extends Component {
                         <button className="btn btn-outline-primary my-2 my-sm-0" type="submit">SignOut</button>
                     </form>
                 </nav>
-                <br/>
             </div>
         )
     }

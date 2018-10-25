@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import firebase from '../../Config/firebase';
-
+import './grayscale.css';
+import Navbar from '../../Component/Navbar/Navbar';
 
 var provider = new firebase.auth.FacebookAuthProvider();
 
 class Login extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props);
 
         this.state = {
 
@@ -21,6 +22,8 @@ class Login extends Component {
             // The signed-in user info.
             var user = result.user;
             console.log('user**', user);
+            console.log('user**', user);
+            console.log('prop**',this.props);
             // ...
         }).catch(function (error) {
             // Handle Errors here.
@@ -38,7 +41,15 @@ class Login extends Component {
     render() {
         return (
             <div >
-            Login
+                <header className="masthead">
+                    <div className="container d-flex h-100 align-items-center">
+                        <div className="mx-auto text-center">
+                            <h1 className="mx-auto my-0 text-uppercase">Meeting App</h1>
+                            <h2 className="text-white-50 mx-auto mt-2 mb-5">Set your meetings with your friends on a single tap!</h2>
+                            <a href="#" onClick={this.login} className="btn btn-primary"><b>Sign-In With Facebook</b></a>
+                        </div>
+                    </div>
+                </header>
             </div>
         )
     }

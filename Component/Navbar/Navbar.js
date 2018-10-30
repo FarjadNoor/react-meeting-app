@@ -1,10 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-
-
-export default class Navbar extends Component {
-    
-=======
 import firebase from 'firebase';
 
 export default class Navbar extends Component {
@@ -22,23 +16,20 @@ export default class Navbar extends Component {
             // Sign-out successful.
             console.log('User Sign Out');
             
+            window.location.href = window.location.origin;
+            
         }).catch(function (error) {
             // An error happened.
         });
     }
 
->>>>>>> React Routes Update
     render() {
         return (
             <div>
-                <nav className="navbar navbar-light bg-light">
-                    <a className="navbar-brand">Meeting-App</a>
+                <nav className="navbar navbar-dark">
+                    <a className="navbar-brand mb-0 text-uppercase h1">Meeting-App</a>
                     <form className="form-inline">
-<<<<<<< HEAD
-                        <button className="btn btn-outline-primary my-2 my-sm-0" type="submit">SignOut</button>
-=======
-                        <button className="btn btn-outline-primary my-2 my-sm-0" type="submit" onClick={this.signOut}>SignOut</button>
->>>>>>> React Routes Update
+                        <button className="btn btn-light my-2 my-sm-0" type="submit" onClick={this.signOut}>SignOut</button>
                     </form>
                 </nav>
             </div>

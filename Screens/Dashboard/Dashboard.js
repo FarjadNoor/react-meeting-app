@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-=======
 import Navbar from '../../Component/Navbar/Navbar';
->>>>>>> React Routes Update
 
 class Dashboard extends Component {
     constructor() {
@@ -17,11 +14,8 @@ class Dashboard extends Component {
 
         return (
             <div>
-<<<<<<< HEAD
-=======
                 <Navbar/>
                 <br/>
->>>>>>> React Routes Update
                 <div className=" d-flex justify-content-center">
                     <br />
                     <h2>
@@ -30,23 +24,10 @@ class Dashboard extends Component {
                 </div>
                 <br />
                 <div className=" d-flex justify-content-center">
-<<<<<<< HEAD
-                    <a href="#" className="btn btn-primary"><b>Set a meeting!</b></a>
-=======
                     <a href="/meeting" className="btn btn-primary"><b>Set a meeting!</b></a>
->>>>>>> React Routes Update
                 </div>
             </div>
         )
     }
-<<<<<<< HEAD
-
-}
-
-export default Dashboard;
-
-
-=======
 }
 export default Dashboard;
->>>>>>> React Routes Update

@@ -30,3 +30,11 @@
     transform: rotate(360deg);
   }
 }
+
+nav a{
+  color: white !important;
+}
+
+nav{
+  background-color: #3b5998 !important;
+}
